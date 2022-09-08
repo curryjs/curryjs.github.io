@@ -1,0 +1,52 @@
+body {
+    background-color: bisque;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+}
+
+.greenbox {
+    background-color: green;
+}
+
+.redbox {
+    background-color: red;
+}
+
+.bluebox {
+    background-color: blue;
+}
+
+.violetbox {
+    background-color: violet;
+}
+
+.yellowbox {
+ background-color: yellow;
+}
+
+@media (max-width: 600px) {
+    .greenbox {
+        background-color: orange;
+    }
+    
+    /* make the redbox show a circle */
+    
+    .redbox {
+        border-radius: 50%;
+        border: solid 2px black;
+    }
+    
+    /* cause the blue box to spin */
+
+    .bluebox {
+        transform: rotate(360deg);
+        transition: transform 3.0s ease-in;
+    }
+
+    .violetbox {
+        display: none;
+    }
+}
